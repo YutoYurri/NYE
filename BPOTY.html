@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2024 Recap</title>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="BPOTY.css" />
+    <link rel="stylesheet" href="firework.css" />
+    <script src="script.js" defer></script>
+    <script>
+      // Check if the page was loaded directly
+      if (!sessionStorage.getItem("started")) {
+        window.location.href = "index.html"; // Redirect to the start page
+      }
+    </script>
+  </head>
+
+  <body>
+    <audio id="introAudio" autoplay>
+      <source src="music/Intro.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="timelineAudio" loop>
+      <source
+        src="music/A Story About Us   Beautiful & Relaxing Piano SongBigRicePiano.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+    <div class="container">
+      <div class="FirstPart">
+        <div class="p1">Welcome to 2024 Recap</div>
+        <div class="p2">
+          As 2024 comes to an end, it’s the perfect time to celebrate someone
+          who has made this year unforgettable
+        </div>
+        <div class="p3"><span>And that person is...</span></div>
+        <div class="p4"><div class="p4_child"></div></div>
+        <div class="p5">From our goofy inside jokes</div>
+        <div class="p6">Talking past midnight every day</div>
+        <div class="p7">And playing chess until 3 a.m</div>
+        <div class="p8">It’s incredible to see how far we’ve come</div>
+        <div class="p9">
+          The time we’ve spent together will always hold a special place in my
+          heart
+        </div>
+        <div class="p10">
+          You came into my life and made every moment brighter
+        </div>
+        <div class="p11">
+          Thank you for showing me how amazing Year 11 can be
+        </div>
+        <div class="p12">
+          For the cakes you baked to celebrate my highest mark
+        </div>
+        <div class="p13">For the ice creams we shared during our hangouts</div>
+        <div class="p14">
+          And for every little moment that made this year so special
+        </div>
+        <div class="p15">
+          Let’s relive the highlights of our friendship this year, because
+          Lilly, you deserve to see how amazing you’ve been.
+        </div>
+      </div>
+      <div class="Celebration">
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
+      </div>
+    </div>
+
+    <div class="timeline-container" style="display: none">
+      <iframe
+        src="draft_timeline.html"
+        frameborder="0"
+        style="width: 100%; height: 100vh"
+      ></iframe>
+    </div>
+  </body>
+</html>

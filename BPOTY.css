@@ -1,0 +1,216 @@
+@font-face {
+    font-family: 'franie';
+    src: url('Fonts/Franie/franievariabletest-italic-bf64c31f3d8c758-webfont.woff2') format('woff2'),
+         url('Fonts/Franie/franievariabletest-italic-bf64c31f3d8c758-webfont.woff') format('woff');
+    font-weight: italic;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'franie';
+    src: url('Fonts/Franie/franievariabletest-regular-bf64c31f3d73b64-webfont.woff2') format('woff2'),
+         url('Fonts/Franie/franievariabletest-regular-bf64c31f3d73b64-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'franie';
+    src: url('Fonts/Franie/franievariabletest-bold-bf64c31f3d8798d-webfont.woff2') format('woff2'),
+         url('Fonts/Franie/franievariabletest-bold-bf64c31f3d8798d-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+
+}
+@keyframes scaledown {
+    0%,
+    75% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+    
+}
+@keyframes FadeInFadeOut {
+    0% {
+        opacity: 0;
+    }
+    25%,
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes FadeInFadeOut_p13 {
+    0% {
+        opacity: 0;
+    }
+    25%,
+    57.14285714% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes FadeInFadeOut__p6 {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(1) rotate(0deg);
+    }
+    10%,
+    90% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1) rotate(0deg);
+    }
+    34.5% {
+        transform: translate(-50%, -50%) scale(1) rotate(0deg);
+    }
+    36% {
+        transform: translate(-50%, -50%) scale(2) rotate(15deg);
+    }
+    37% {
+        transform: translate(-50%, -50%) scale(2) rotate(0deg);
+    }
+    38% {
+        transform: translate(-50%, -50%) scale(2) rotate(-15deg);
+    }
+    39% {
+        transform: translate(-50%, -50%) scale(2) rotate(0deg);
+    }
+    40% {
+        transform: translate(-50%, -50%) scale(2) rotate(15deg);
+    }
+    41% {
+        transform: translate(-50%, -50%) scale(1) rotate(0deg);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(1) rotate(0deg);
+    }
+}
+
+@keyframes blackout {
+    0%, 57.14285714% {
+        background: 
+    linear-gradient(#0007, #0000),
+    #123;
+    }
+    100% {
+        background: black;
+    }
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    text-align: center;
+    height: 100vh;
+    position: relative;
+    font-family: 'franie', Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    background: 
+    linear-gradient(#0007, #0000),
+    #123;
+    margin: 0;
+    overflow: hidden;
+}
+
+.FirstPart {
+    color: white;
+}
+
+.p1, .p2, .p3, .p4, .p5, .p6, .p7, .p8, .p9, .p10, .p11, .p12, .p13, .p14, .p15 {
+    top: 50%;
+    position: absolute;
+    opacity: 0; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: FadeInFadeOut 5s ease-in-out forwards;
+}
+
+.p1 {
+    animation-delay: 0s;
+}
+
+.p2 {
+    animation-delay: 5s;
+}
+
+.p3 {
+    animation-delay: 10s;
+}
+
+.p3 span {
+    display: inline-block;
+    animation: scaledown 5s ease-in-out none;
+    animation-delay: 10s;
+}
+
+.p4 {
+    animation: FadeInFadeOut__p6 10s ease-in-out forwards;
+    animation-delay: 15s;
+}
+
+.p4_child {
+    display: inline-block; 
+}
+
+.p5 {
+    animation-delay: 25s;
+}
+
+.p6 {
+    animation-delay: 30s;
+}
+
+.p7 {
+    animation-delay: 35s;
+}
+.p8 {
+    animation-delay: 40s
+}
+
+.p9 {
+    animation-delay: 45s;
+}
+
+.p10 {
+    animation-delay: 50s;
+}
+
+.p11 {
+    animation-delay: 55s;
+}
+
+.p12 {
+    animation-delay: 60s;
+}
+
+.p13 {
+    animation-delay: 65s;
+}
+
+.p14 {
+    animation-delay: 70s;
+}
+
+.p15 {
+    animation: FadeInFadeOut_p13 7s ease-in-out forwards;
+    animation-delay: 75s;
+}
+
+body {
+    animation: blackout 7s ease-out forwards;
+    animation-delay: 75s;
+}
+
